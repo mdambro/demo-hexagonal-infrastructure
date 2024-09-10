@@ -1,0 +1,35 @@
+########## Config Spring ##########
+spring:
+  application:
+    name: @project.name@
+  profiles:
+    active: @spring.profiles.active@
+  jmx:
+    default-domain: @project.name@
+########## End Config Spring ##########
+
+########## Config Info App ##########
+info:
+  app:
+    java:
+      source: @java.version@
+      target: @java.version@
+    service:
+      name: @project.name@
+      description: @project.description@
+      version: @project.version@
+########## End Config Info App ##########
+
+########## Config Spring Doc Open Api ##########
+springdoc:
+#  swagger-ui:
+#    disable-swagger-default-url: true
+#    path: /swagger
+  info:
+    title: @project.name@
+    description: @project.description@
+    version: @project.version@
+    name-contact: Matias DAmbrosio
+    mail-contact: mati.dambrosio@gmail.com
+    url-contact: https://developer.mdambro.com
+########## End Config Spring Doc Open Api ##########
